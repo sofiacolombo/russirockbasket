@@ -1,3 +1,6 @@
-# russirockbasket.github.io
-Un sito semplice, 
-mostra i menù dell'evento Russi Rock Basket (2023).
+# Menù RussiRockBasket
+Sito web menù per evento RussiRockBasket (2023).  
+Con QRCode allegato.  
+(Visione preferibile da telefono)
+
+Online [qui](https://russirockbasket.github.io/).
