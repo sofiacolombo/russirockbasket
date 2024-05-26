@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Cheesebacon Burger",
+        "description": "..., con patatine fritte",
+        "restaurant": "Blue'n Green Pub",
+        "price": "13,00€" 
+    },
+    {
+        "name": "Original",
+        "description": "..., con patatine fritte",
+        "restaurant": "Blue'n Green Pub",
+        "price": "11,50€" 
+    },
+    {
+        "name": "Veg Burger",
+        "description": "..., con patatine fritte",
+        "restaurant": "Blue'n Green Pub",
+        "price": "€" 
+    },
+    {
+        "name": "Hotdog e patatine",
+        "description": "",
+        "restaurant": "Blue'n Green Pub",
+        "price": "€" 
+    },
+    {
+        "name": "Burrito San Diego e patatine ",
+        "description": "Cotoletta di pollo, lattuga, dressing allo yogurt",
+        "restaurant": "Blue'n Green Pub",
+        "price": "€" 
+    },
+    {
+        "name": "Nugget",
+        "description": "",
+        "restaurant": "Blue'n Green Pub",
+        "price": "€" 
+    },
+    {
+        "name": "Patatine",
+        "description": "",
+        "restaurant": "Blue'n Green Pub",
+        "price": "€" 
+    }
+]
