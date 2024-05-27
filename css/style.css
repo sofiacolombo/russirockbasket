@@ -30,9 +30,12 @@ body {
 
 #price {text-align: right;}
 
-p { margin:0;}
+p { margin:0;}  
 
-.col-md-2, .col-md-6, .col-md-4 {padding:10px;overflow:hidden;}
+.col-md-2, .col-md-6, .col-md-4 {
+    padding:10px;
+    overflow:hidden;
+}
 
 img {pointer-events: none;}
 
