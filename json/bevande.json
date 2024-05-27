@@ -1,0 +1,71 @@
+[
+    {
+        "non-alcoholic": [
+            {
+                "name": "Acqua Naturale",
+                "price": ""
+            },
+            {
+                "name": "Acqua Gassata",
+                "price": ""
+            },
+            {
+                "name": "Red Bull",
+                "price": ""
+            },
+            {
+                "name": "Coca Cola",
+                "price": ""
+            },
+            {
+                "name": "Fanta",
+                "price": ""
+            },
+            {
+                "name": "Tea limone",
+                "price": ""
+            },
+            {
+                "name": "Tea Pesca",
+                "price": ""
+            },
+            {
+                "name": "Powerade",
+                "price": ""
+            }
+        ],
+        "alcoholic": [
+            {
+                "name": "Birra",
+                "price": ""
+            },
+            {
+                "name": "Gin Tonic",
+                "price": ""
+            },
+            {
+                "name": "Gin Lemon",
+                "price": ""
+            },
+            {
+                "name": "Vodka Lemon",
+                "price": ""
+            },
+            {
+                "name": "Vodka Redbull",
+                "price": ""
+            },
+            {
+                "name": "Moscow Mule",
+                "price": ""
+            },
+            {
+                "name": "London Mule",
+                "price": ""
+            }
+
+        ]
+
+        
+    }
+]

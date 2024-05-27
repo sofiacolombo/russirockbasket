@@ -16,6 +16,7 @@ body {
     width:100%;
     position: fixed;
     top:0;
+    z-index: 1;
 }
 .navbar-brand img {
     max-height: 40px; 
@@ -48,8 +49,15 @@ h1, h2, h3, h4, h5, h6 {
     padding:10px;
     overflow:hidden;
 }
+.col-12 {
+    text-align: center;
+}
 
-img {pointer-events: none;}
+img{pointer-events: none;}
+
+.img {    
+    float:left;
+}
 
 #footer {
     margin-top:10vh;

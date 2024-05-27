@@ -1,13 +1,13 @@
 [
     {
         "name": "Cheesebacon Burger",
-        "description": "Scottona 200g, cheddar, pomodoro, lattuga, cipolla stufata, maionese e ketchup",
+        "description": "Scottona, bacon, cheddar, pomodoro, lattuga, cipolla stufata, maionese, ketchup",
         "restaurant": "Blue'n Green Pub",
         "price": "13,00€" 
     },
     {
-        "name": "Original",
-        "description": "Scottona 200g, cheddar, cetriolini, lattuga, cipolla stufata e salsa burger",
+        "name": "Original Burger",
+        "description": "Scottona, cheddar, cetriolini, lattuga, cipolla stufata, salsa burger",
         "restaurant": "Blue'n Green Pub",
         "price": "11,50€" 
     },
@@ -30,8 +30,8 @@
         "price": "6,50€" 
     },
     {
-        "name": "Nugget",
-        "description": "8 pezzi",
+        "name": "Crocchettte di pollo",
+        "description": "6 pezzi",
         "restaurant": "Blue'n Green Pub",
         "price": "5,00€" 
     },
@@ -40,5 +40,11 @@
         "description": "",
         "restaurant": "Blue'n Green Pub",
         "price": "4,00€" 
+    },
+    {
+        "name": "Dolce",
+        "description": "Crema di mascarpone, coulis di arancia e amaretti",
+        "restaurant": "Blue'n Green Pub",
+        "price": ",00€"
     }
 ]
