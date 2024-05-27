@@ -33,53 +33,54 @@
 			<img src="./img/logo_sito.png" alt="Logo Sito" width="200px">
 		</div>
     	<div class="menu">
+			<!-- rows -->
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-3" id="logof"><img src="./img/logo_furzena.png" alt="Logo Furzenà" width="150"></div>
-				<div class="col-2"></div>
-				<div class="col-3" id="logob"><img src="./img/logo_bluengreen.png" alt="Logo Blue'n Green Pub" width="150"></div>
-				<div class="col-2"></div>
+				<div class="col-12 col-md-6">
+					<div class="text-center">
+						<img src="./img/logo_furzena.png" class="logo" alt="Logo Furzenà" width="150">
+					</div>
+					<div class="row" id="furzenaMenu">
+				<!-- <div class="col-md-2"></div>
+						<div class="col-md-6">
+						</div>
+						<div class="col-md-4">
+						</div>
+					</div> -->
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="text-center">
+						<img src="./img/logo_bluengreen.png" class="logo" alt="Logo Blue'n Green Pub" width="150">
+						<small><br/>*Tutti i burger sono serviti con contorno di patatine fritte</small>
+					</div>
+					<div class="row" id="blueMenu">
+				<!-- <div class="col-md-2"></div>
+						<div class="col-md-6">
+							
+						</div>
+						<div class="col-md-4">
+							
+						</div> -->
+					</div>
+				</div>
 			</div>
-			<!-- <div class="row">
-				<div class="col-1"></div>
-				<div class="col-3">
-					<p class="plateNamef"></p>
-					<small class="descriptionPlatef"></small>
-				</div>
-				<div class="col-2">
-					<p class="pricef">
-				</div>
-
-				<div class="col-3">
-					<p class="plateNameb"></p>
-					<small class="descriptionPlateb"></small>
-				</div>
-				<div class="col-2">
-					<p class="priceb"></p>
-				</div>
-				<div class="col-1"></div>
-			</div> -->
 			
 		</div>
 	</div>
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
-    	fetch('furzena.json')
-    	  .then(response => response.json())
-    	  .then(plates => {
-			const menu = document.querySelector('.menu');
+			Promise.all([
+				fetch('./json/furzena.json').then(response => response.json()),
+				fetch('./json/blue.json').then(response => response.json())
+			])
+    	  .then(([furzenaPlates, bluePlates]) => {
+			const furzenaMenu = document.querySelector('#furzenaMenu');
+			const blueMenu = document.querySelector('#blueMenu');
 
-			plates.forEach(plate => {
-				let row = document.createElement('div');
-				row.className = 'row';
-
-				let col1 = document.createElement('div');
-				let col2 = document.createElement('div');
-				let col3 = document.createElement('div');
-
-				col1.className = 'col-1';
-				col2.className = 'col-2';
-				col3.className ='col-3';
+			furzenaPlates.forEach(plate => {
+				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
+				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
+				let col4 = document.createElement('div'); col4.className = 'col-4 col-md-4';
 
 				let price = document.createElement('p');
 				let name = document.createElement('p');
@@ -93,18 +94,42 @@
 				description.className = 'descriptionPlatef';
 				price.className = 'pricef';
 
-				col3.appendChild(name);
-				col3.appendChild(description);
-				col2.appendChild(price);
+				col6.appendChild(name);
+				col6.appendChild(description);
+				col4.appendChild(price);
 
-				row.appendChild(col1);
-				row.appendChild(col3);
-				row.appendChild(col2);
-			
-				menu.appendChild(row);
+				furzenaMenu.appendChild(col2);
+				furzenaMenu.appendChild(col6);
+				furzenaMenu.appendChild(col4);
+			});
+
+			bluePlates.forEach(plate => {
+				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
+				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
+				let col4 = document.createElement('div'); col4.className = 'col-4 col-md-4';
+
+				let price = document.createElement('p');
+				let name = document.createElement('p');
+				let description = document.createElement('small');
+				
+				name.textContent = plate.name;
+				description.textContent = plate.description;
+				price.textContent = plate.price;
+
+				name.className = 'plateNameb' ;
+				description.className = 'descriptionPlateb';
+				price.className = 'priceb';
+
+				col6.appendChild(name);
+				col6.appendChild(description);
+				col4.appendChild(price);
+
+				blueMenu.appendChild(col2);
+				blueMenu.appendChild(col6);
+				blueMenu.appendChild(col4);
 			});
 			
-    	  })
+    	  })	
     	  .catch(error => console.error('Error loading plates:', error));
 		});
 

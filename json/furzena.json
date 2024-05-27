@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Lasagna",
+        "description": "Lasagna bianca, besciamella e ragù",
+        "restaurant": "Furzena",
+        "price": "10,00€" 
+    },
+    {
+        "name": "Cappelletti",
+        "description": "Cappelletti al ragù",
+        "restaurant": "Furzena",
+        "price": "9,50€" 
+    },
+    {
+        "name": "Pasta fredda verdure vegana",
+        "description": "Sedanini con piselli, carote, mais e zucchine",
+        "restaurant": "Furzena",
+        "price": "8,00€" 
+    },
+    {
+        "name": "Panzanella",
+        "description": "",
+        "restaurant": "Furzena",
+        "price": "5,00€" 
+    },
+    {
+        "name": "Zuppa inglese",
+        "description": "Crema pasticcera, savoiardi",
+        "restaurant": "Furzena",
+        "price": "5,00€" 
+    }
+]		

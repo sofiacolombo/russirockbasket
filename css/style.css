@@ -11,52 +11,30 @@ body {
 	padding: 0;
 }
 
+.navbar {
+    position: fixed;
+    width:100%;
+    position: fixed;
+    top:0;
+}
+
 .container {
     width: 100%;
-    margin: 0 auto;
+    margin-top: 40px;
     padding: 20px;
 }
 
-.logo, #logob, #logof {
-    text-align: center;
-}
+.logo {text-align: center;}
 
-.menu {
-    width: 100%;
-}
+.menu {width: 100%;}
 
-.column {
-    text-align: left;
-    margin-bottom: 20px;
-}
+#price {text-align: right;}
 
-table {
-    width: 100%;
-}
+p { margin:0;}
 
-th, td {
-    padding: 5px;
-}
+.col-md-2, .col-md-6, .col-md-4 {padding:10px;overflow:hidden;}
 
-#price {
-    text-align: right;
-}
-
-.logo-table {
-    text-align: center;
-}
-
-.col-2, .col-3, .col-4, .col-1 {
-    padding:15px;
-}
-
-img {
-    pointer-events: none;
-}
-
-div {
-    border:1px solid white;
-}
+img {pointer-events: none;}
 
 /* */
 @media (min-width: 600px) {

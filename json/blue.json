@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Cheesebacon Burger",
+        "description": "Scottona 200g, cheddar, pomodoro, lattuga, cipolla stufata, maionese e ketchup",
+        "restaurant": "Blue'n Green Pub",
+        "price": "13,00€" 
+    },
+    {
+        "name": "Original",
+        "description": "Scottona 200g, cheddar, cetriolini, lattuga, cipolla stufata e salsa burger",
+        "restaurant": "Blue'n Green Pub",
+        "price": "11,50€" 
+    },
+    {
+        "name": "Veg Burger",
+        "description": "Svizzera vegetale, lattuga, pomodoro, cipolla stufata, maionese veg, ketchup",
+        "restaurant": "Blue'n Green Pub",
+        "price": "9,00€" 
+    },
+    {
+        "name": "Hotdog con patatine",
+        "description": "Wurstel, salse a scelta",
+        "restaurant": "Blue'n Green Pub",
+        "price": "7,00€" 
+    },
+    {
+        "name": "Burrito San Diego con patatine",
+        "description": "Cotoletta di pollo, lattuga, dressing allo yogurt",
+        "restaurant": "Blue'n Green Pub",
+        "price": "6,50€" 
+    },
+    {
+        "name": "Nugget",
+        "description": "8 pezzi",
+        "restaurant": "Blue'n Green Pub",
+        "price": "5,00€" 
+    },
+    {
+        "name": "Patatine fritte",
+        "description": "",
+        "restaurant": "Blue'n Green Pub",
+        "price": "4,00€" 
+    }
+]
