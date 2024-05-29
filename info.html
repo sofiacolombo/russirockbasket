@@ -5,11 +5,17 @@
 	<meta charset="UTF-8" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style>
+        .col-12 {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #ffffff;">
-        <div class="container-fluid">
-            <a class="navbar-brand" id="circle">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #ffffff;">
+              <div class="container-fluid">
+                  <a class="navbar-brand" id="circle">
 				<img src="./img/basketball.png" alt="basketball.png" width="30" class="d-inline-block align-text-top">
 			</a>
           	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,9 +59,118 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3>DATE</h3>
-                <p>25 Giugno - UNDER</p>
+                <!-- <p>25 Giugno - UNDER</p>
                 <p>26-27 Giugno - SENIOR</p>
-                <!-- TODO mini calendario con date  -->
+                TODO dialog event   -->
+                <div class="calendar">
+                    <div class="month-indicator">
+                      Giugno 2024
+                    </div>
+                    <div class="day-of-week">
+                      <div>Su</div>
+                      <div>Mo</div>
+                      <div>Tu</div>
+                      <div>We</div>
+                      <div>Th</div>
+                      <div>Fr</div>
+                      <div>Sa</div>
+                    </div>
+                    <div class="date-grid">
+                      <button>
+                        <time datetime="2024-06-01">1</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-02">2</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-03">3</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-04">4</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-05">5</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-06">6</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-07">7</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-08">8</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-09">9</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-10">10</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-11">11</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-12">12</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-13">13</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-14">14</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-15">15</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-16">16</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-17">17</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-18">18</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-19">19</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-20">20</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-21">21</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-22">22</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-23">23</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-24">24</time>
+                      </button>
+                      <button class="eventDays">
+                        <time datetime="2024-06-25">25</time>
+                      </button>
+                      <button class="eventDays">
+                        <time datetime="2024-06-26">26</time>
+                      </button>
+                      <button class="eventDays">
+                        <time datetime="2024-06-27">27</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-28">28</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-29">29</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-30">30</time>
+                      </button>
+                      <button>
+                        <time datetime="2024-06-31">31</time>
+                      </button>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6">
                 <h3>QUOTE E SQUADRE</h3>
@@ -101,7 +216,7 @@
                         MIGLIOR U21: Buono per Bagno Buco 
                         <br/><small>1 Ombrellone, 2 lettini e consumazione da 30€</small>
                     </li>
-                    <li class="list-group-item"><img class="img" src="./img/gold.png" width="30px">MIGLIOR OVER 35: Liquori dai F.ll Babini di Carlo Antonio Babini</li>
+                    <li class="list-group-item"><img class="img" src="./img/gold.png" width="30px">MIGLIOR OVER 35: Liquori dai F.lli Babini di Carlo Antonio Babini</li>
                 </ul>
             </div>
 
