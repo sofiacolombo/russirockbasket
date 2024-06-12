@@ -11,20 +11,20 @@
         <div class="container-fluid">
           	<a class="navbar-brand" id="circle">
 				<img src="./img/basketball.png" alt="basketball.png" width="30" class="d-inline-block align-text-top">
-			</a>
+			</a><a class="navbar-brand">RussiRockBasket</a>
           	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           	  <span class="navbar-toggler-icon"></span>
           	</button>
           	<div class="collapse navbar-collapse" id="navbarNavDropdown">
           	  	<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="./index.html">Menù</a>
+						<a class="nav-link" href="./index.html">Menu</a>
 			  		</li>
           	    	<li class="nav-item">
-          	    	  	<a class="nav-link" href="./info.html">Info Torneo</a>
+          	    	  	<a class="nav-link" href="./info.html">Info</a>
           	    	</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./sponsor.html">Contatti & Sponsor</a>
+						<a class="nav-link" href="./sponsor.html">Sponsor</a>
 					</li>
           	 	</ul>
           	</div>
@@ -42,7 +42,8 @@
 						<img src="./img/logo_frz.png" class="logo" alt="Logo Furzenà" width="150">
 					</div>
 					<div class="row" id="furzenaMenu">
-				<!-- <div class="col-md-2"></div>
+				<!-- 	<div class="col-md-2">
+						</div>
 						<div class="col-md-6">
 						</div>
 						<div class="col-md-4">
@@ -56,7 +57,8 @@
 						<small><br/>*Tutti i panini sono serviti con contorno di patatine fritte</small>
 					</div>
 					<div class="row" id="blueMenu">
-				<!-- <div class="col-md-2"></div>
+				<!-- 	<div class="col-md-2">
+						</div>
 						<div class="col-md-6">
 							
 						</div>
@@ -65,10 +67,15 @@
 						</div> -->
 					</div>
 				</div>
-			</div>
-
-			<div class="col-12" id="otherComments">
-				<!-- INFO SUL BERE -->
+				<div class="col-12 col-md-6" >
+					<div class="text-center">
+						<h3>Stand Bar</h3>
+					</div>
+					<div class="row" id="drinks">
+						<!-- INFO SUL BERE -->
+					</div>
+						
+				</div>
 			</div>
 			
 		</div>
@@ -78,12 +85,14 @@
 		document.addEventListener('DOMContentLoaded', function() {
 			Promise.all([
 				fetch('./json/furzena.json').then(response => response.json()),
-				fetch('./json/blue.json').then(response => response.json())
+				fetch('./json/blue.json').then(response => response.json()),
+				fetch('./json/bevande.json').then(response => response.json())
 			])
-    	  .then(([furzenaPlates, bluePlates]) => {
+    	  .then(([furzenaPlates, bluePlates, drinksData]) => {
 			const furzenaMenu = document.querySelector('#furzenaMenu');
 			const blueMenu = document.querySelector('#blueMenu');
 
+			// Ristorante 1
 			furzenaPlates.forEach(plate => {
 				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
 				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
@@ -110,6 +119,7 @@
 				furzenaMenu.appendChild(col4);
 			});
 
+			// Ristorante 2
 			bluePlates.forEach(plate => {
 				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
 				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
@@ -135,10 +145,71 @@
 				blueMenu.appendChild(col6);
 				blueMenu.appendChild(col4);
 			});
+
+			// Bevande
+			const drinks = drinksData[0];
+			const drinksMenu = document.querySelector('#drinks');
+
+			const nonAlcoholic = drinks['non-alcoholic'];
+        	const alcoholic = drinks['alcoholic'];
+
+			const nonalc = document.createElement('h5');
+			const alc = document.createElement('h5');
+
+			nonalc.textContent = "Analcolici"; nonalc.style.textAlign = "center";
+			alc.textContent = "Alcolici"; alc.style.textAlign = "center";
 			
+			
+			drinksMenu.appendChild(nonalc);
+			nonAlcoholic.forEach(drink => {
+				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
+				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
+				let col4 = document.createElement('div'); col4.className = 'col-4 col-md-4';
+
+				let price = document.createElement('p');
+				let name = document.createElement('p');
+
+				name.textContent = drink.name;
+				price.textContent = drink.price;
+
+				name.className = 'drinkName';
+				price.className = 'price';
+
+				col6.appendChild(name);
+				col4.appendChild(price);
+
+				drinksMenu.appendChild(col2);
+				drinksMenu.appendChild(col6);
+				drinksMenu.appendChild(col4);
+			});
+
+			drinksMenu.appendChild(alc);
+			alcoholic.forEach(drink => {
+				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
+				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
+				let col4 = document.createElement('div'); col4.className = 'col-4 col-md-4';
+
+				let price = document.createElement('p');
+				let name = document.createElement('p');
+
+				name.textContent = drink.name;
+				price.textContent = drink.price;
+
+				name.className = 'drinkName';
+				price.className = 'price';
+
+				col6.appendChild(name);
+				col4.appendChild(price);
+
+				drinksMenu.appendChild(col2);
+				drinksMenu.appendChild(col6);
+				drinksMenu.appendChild(col4);
+			});
+
     	  })	
     	  .catch(error => console.error('Error loading plates:', error));
 		});
+
 
 	</script>
 </body>

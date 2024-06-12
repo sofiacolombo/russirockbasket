@@ -114,19 +114,22 @@ img{pointer-events: none;}
     color: var(--main-text-color); 
 }
 .calendar {
-    margin:0 auto;
-    max-width: 20vw;
+    max-width: 65vw;
+    margin:auto;
     font-variant: small-caps;
 }
 .date-grid .eventDays {
     background-color: var(--other-bg-color);
 }
+.parent-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 600px) {
-    .calendar, .calendar * {
-      min-width: 15vw;
-      width:100%;
-      margin: 0;
-      background-color: transparent;
+    .calendar {
+        min-width: 40vw;        
+        background-color: transparent;
     }
     .month-indicator {
         text-align: center;
@@ -142,7 +145,6 @@ img{pointer-events: none;}
     }
     .date-grid .eventDays {
         background-color: var(--other-bg-color);
-        /* TO adjust */
         border-radius: 80%;
     }
 }
