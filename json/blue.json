@@ -42,9 +42,9 @@
         "price": "4,00€" 
     },
     {
-        "name": "Dolce",
-        "description": "Crema di mascarpone, coulis di arancia e amaretti",
+        "name": "Crema di mascarpone, coulis di arancia e amaretti",
+        "description": "",
         "restaurant": "Blue'n Green Pub",
-        "price": ",00€"
+        "price": "5,00€"
     }
 ]

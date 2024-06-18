@@ -20,9 +20,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="./index.html">Menu</a>
 			  		</li>
-          	    	<li class="nav-item">
-          	    	  	<a class="nav-link" href="./info.html">Info</a>
-          	    	</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./sponsor.html">Sponsor</a>
 					</li>
@@ -31,9 +28,6 @@
         </div>
     </nav>
 	<div class="container">
-		<div class="logo">
-			<img src="./img/logo_sito.png" alt="Logo Sito" width="200px">
-		</div>
     	<div class="menu">
 			<!-- rows -->
 			<div class="row">
@@ -68,9 +62,9 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-6" >
-					<div class="text-center">
-						<h3>Stand Bar</h3>
-					</div>
+					<div class="logo">
+						<img src="./img/logo_sito.png" alt="Logo Sito" width="200px">
+					</div>	
 					<div class="row" id="drinks">
 						<!-- INFO SUL BERE -->
 					</div>
@@ -153,12 +147,11 @@
 			const nonAlcoholic = drinks['non-alcoholic'];
         	const alcoholic = drinks['alcoholic'];
 
-			const nonalc = document.createElement('h5');
-			const alc = document.createElement('h5');
+			const nonalc = document.createElement('h3');
+			const alc = document.createElement('h3');
 
 			nonalc.textContent = "Analcolici"; nonalc.style.textAlign = "center";
 			alc.textContent = "Alcolici"; alc.style.textAlign = "center";
-			
 			
 			drinksMenu.appendChild(nonalc);
 			nonAlcoholic.forEach(drink => {
