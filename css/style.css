@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #203562;
     --main-text-color: #fff;
+    --other-text-color: #000;
     --other-bg-color: #f14a24;
 }
 
@@ -8,8 +9,27 @@ body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
     margin: 0;
 	padding: 0;
+}
+
+footer {
+    background-color: var(--main-text-color);
+    color:var(--other-text-color);
+    width:100%;
+}
+
+.col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor {
+    max-width: 50%;
+    height: auto;
 }
 
 .navbar {
@@ -28,8 +48,8 @@ body {
 
 .container {
     width: 100%;
-    margin-top: 40px;
-    padding: 20px;
+    margin-top: 10vh;
+    padding:0;
 }
 
 .logo {text-align: center;}
@@ -53,10 +73,9 @@ h1, h2, h3, h4, h5, h6 {
     overflow:hidden;
 }
 
-img{pointer-events: none;}
-
-.img {    
-    float:left;
+img {
+    pointer-events: none;
+    margin:20px;
 }
 
 #footer {
@@ -77,76 +96,4 @@ img{pointer-events: none;}
         transform: rotate(360deg);
     }
 }
-    
-/* info.html calendar */
-.month-indicator {
-    color: var(--main-text-color);
-    text-align: center;
-    font-weight: bold;
-}
-.day-of-week,
-.date-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-.day-of-week {
-    margin-top: 1.25em;
-}
-.day-of-week > * {
-    font-size: 0.85em;
-    color: var(--main-text-color);
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-align: center;
-}
-.date-grid {
-    margin-top: 0.5em;
-    background-color: transparent;
-}
-.date-grid button:first-child {
-    grid-column: 7;
-}
-.date-grid button {
-    position: relative;
-    border: 0;
-    width: 4.5ch;
-    height: 4.5ch;
-    border-radius: 50%;
-    background-color: transparent;
-    color: var(--main-text-color); 
-}
-.calendar {
-    max-width: 65vw;
-    margin:auto;
-    font-variant: small-caps;
-}
-.date-grid .eventDays {
-    background-color: var(--other-bg-color);
-}
-.parent-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media screen and (max-width: 600px) {
-    .calendar {
-        min-width: 40vw;        
-        background-color: transparent;
-    }
-    .month-indicator {
-        text-align: center;
-        font-weight: bold;
-    }
-    .day-of-week,
-    .date-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-    }
-    .day-of-week {
-        margin-top: 1.25em;
-    }
-    .date-grid .eventDays {
-        background-color: var(--other-bg-color);
-        border-radius: 80%;
-    }
-}
+
