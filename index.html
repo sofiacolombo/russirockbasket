@@ -11,20 +11,8 @@
         <div class="container-fluid">
           	<a class="navbar-brand" id="circle">
 				<img src="./img/basketball.png" alt="basketball.png" width="30" class="d-inline-block align-text-top">
-			</a><a class="navbar-brand">RussiRockBasket</a>
-          	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          	  <span class="navbar-toggler-icon"></span>
-          	</button>
-          	<div class="collapse navbar-collapse" id="navbarNavDropdown">
-          	  	<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="./index.html">Menu</a>
-			  		</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./sponsor.html">Sponsor</a>
-					</li>
-          	 	</ul>
-          	</div>
+			</a>
+			<a class="navbar-brand">RussiRockBasket</a>
         </div>
     </nav>
 	<div class="container">
@@ -61,18 +49,38 @@
 						</div> -->
 					</div>
 				</div>
-				<div class="col-12 col-md-6" >
+				<div class="row"' >
 					<div class="logo">
 						<img src="./img/logo_sito.png" alt="Logo Sito" width="200px">
-					</div>	
-					<div class="row" id="drinks">
-						<!-- INFO SUL BERE -->
 					</div>
-						
+					<div class="col-12 col-md-6">
+						<div class="row" id="drinksAlc">
+							<!-- INFO SUL BERE -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="row" id="drinksnAlc">
+
+						</div>
+					</div>
 				</div>
 			</div>
 			
 		</div>
+		<footer>
+			<!-- <div class="row">
+				<div class="col-4 col-md-2">
+					<img class="sponsor" src="./img/..." alt="...">
+				</div>
+				<div class="col-4">
+					<img class="sponsor" src="./img/..." alt="...">
+				</div>
+				<div class="col-4">
+					<img class="sponsor" src="./img/..." alt="...">
+				</div>
+			</div> -->
+
+		</footer>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
@@ -80,9 +88,10 @@
 			Promise.all([
 				fetch('./json/furzena.json').then(response => response.json()),
 				fetch('./json/blue.json').then(response => response.json()),
-				fetch('./json/bevande.json').then(response => response.json())
+				fetch('./json/bevande.json').then(response => response.json()),
+				fetch('./json/sponsor.json').then(response => response.json() )
 			])
-    	  .then(([furzenaPlates, bluePlates, drinksData]) => {
+    	  .then(([furzenaPlates, bluePlates, drinksData, sponsors]) => {
 			const furzenaMenu = document.querySelector('#furzenaMenu');
 			const blueMenu = document.querySelector('#blueMenu');
 
@@ -142,7 +151,8 @@
 
 			// Bevande
 			const drinks = drinksData[0];
-			const drinksMenu = document.querySelector('#drinks');
+			const drinksAlc = document.querySelector('#drinksAlc');
+			const drinksnAlc = document.querySelector('#drinksnAlc');
 
 			const nonAlcoholic = drinks['non-alcoholic'];
         	const alcoholic = drinks['alcoholic'];
@@ -153,7 +163,7 @@
 			nonalc.textContent = "Analcolici"; nonalc.style.textAlign = "center";
 			alc.textContent = "Alcolici"; alc.style.textAlign = "center";
 			
-			drinksMenu.appendChild(nonalc);
+			drinksnAlc.appendChild(nonalc);
 			nonAlcoholic.forEach(drink => {
 				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
 				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
@@ -171,12 +181,13 @@
 				col6.appendChild(name);
 				col4.appendChild(price);
 
-				drinksMenu.appendChild(col2);
-				drinksMenu.appendChild(col6);
-				drinksMenu.appendChild(col4);
+				drinksnAlc.appendChild(col2);
+				drinksnAlc.appendChild(col6);
+				drinksnAlc.appendChild(col4);
 			});
 
-			drinksMenu.appendChild(alc);
+			drinksAlc.appendChild(alc);
+
 			alcoholic.forEach(drink => {
 				let col2 = document.createElement('div'); col2.className = 'col-2 col-md-2';
 				let col6 = document.createElement('div'); col6.className = 'col-6 col-md-6';
@@ -194,10 +205,27 @@
 				col6.appendChild(name);
 				col4.appendChild(price);
 
-				drinksMenu.appendChild(col2);
-				drinksMenu.appendChild(col6);
-				drinksMenu.appendChild(col4);
+				drinksAlc.appendChild(col2);
+				drinksAlc.appendChild(col6);
+				drinksAlc.appendChild(col4);
 			});
+
+			// Sponsor
+			for (let i = 0; i < sponsors.length; i++) {
+				if (i % 3 == 0) {
+					let row = document.createElement('div'); row.className = 'row';
+					document.querySelector('footer').appendChild(row);
+				}
+				let col = document.createElement('div'); 
+				col.className = 'col-4';
+				let img = document.createElement('img');
+				img.className = 'sponsor';
+				img.src = sponsors[i].url;
+				img.alt = sponsors[i].logo;
+
+				col.appendChild(img);
+				document.querySelector('footer').lastChild.appendChild(col);
+			}
 
     	  })	
     	  .catch(error => console.error('Error loading plates:', error));
