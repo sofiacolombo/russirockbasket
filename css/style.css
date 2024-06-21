@@ -9,18 +9,18 @@ body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
     margin: 0;
 	padding: 0;
+    overflow-x: hidden;
 }
 
 footer {
     background-color: var(--main-text-color);
     color:var(--other-text-color);
-    width:100%;
+    
 }
-
 .col-4 {
     display: flex;
     justify-content: center;
@@ -32,23 +32,10 @@ footer {
     height: auto;
 }
 
-.navbar {
-    position: fixed;
-    width:100%;
-    position: fixed;
-    top:0;
-    z-index: 1000;
-}
-.navbar-brand img {
-    max-height: 40px; 
-    width: auto;
-    margin-top: -10px; 
-    margin-bottom: -10px;
-}   
-
 .container {
     width: 100%;
     margin-top: 10vh;
+    margin-bottom: 10vh;
     padding:0;
 }
 
