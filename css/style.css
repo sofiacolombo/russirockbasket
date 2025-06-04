@@ -8,79 +8,65 @@
 body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100%;
-    min-width: 100%;
-    margin: 0;
-	padding: 0;
-    overflow-x: hidden;
+    font-family: Tahoma, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    padding: 10px 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.scelta { 
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.row-buttons {
+    background-color: var(--main-text-color);
+    padding: 2vh;
+    margin-top: 10px;
+}
+
+.button-container {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    min-width: min-content;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.btn {
+    background-color: var(--other-bg-color);
+    color: var(--main-text-color);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn:hover, .btn:active { /* btn:active hates me */
+    background-color: #d8330e;
+    color:white;
+}
+.btn.active {
+    background-color: #d8330e;
+    color: white;
 }
 
 footer {
     background-color: var(--main-text-color);
-    color:var(--other-text-color);
-    
+    color:var(--other-text-color);   
 }
-.col-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sponsor {
-    max-width: 50%;
-    height: auto;
-}
-
-.container {
-    width: 100%;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    padding:0;
-}
-
-.logo {text-align: center;}
-
-.menu {width: 100%;}
-
-#price {text-align: right;}
-
-p { 
-    margin:0;
-    font-size: 1.2em;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    padding:20px;
-    padding-top:15px;
-}
-
-.col-md-2, .col-md-6, .col-md-4 {
-    padding:10px;
-    overflow:hidden;
-}
-
-img {
-    pointer-events: none;
-    margin:20px;
-}
-
-#footer {
-    margin-top:10vh;
-    text-align: center;
-}
-
-#circle {
-    transform-origin: center;
-    animation: rotate-circle 10s linear infinite;
-}
-
-@keyframes rotate-circle {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-

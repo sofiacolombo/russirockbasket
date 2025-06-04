@@ -1,2 +1,6 @@
 *.txt
 *.zip
+*.md
+/css/old_style.css
+old_index.html
+sponsor.html
