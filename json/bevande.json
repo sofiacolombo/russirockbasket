@@ -1,6 +1,6 @@
 [
     {
-        "non-alcoholic": [
+        "acqua": [
             {
                 "name": "Acqua Naturale 50cl",
                 "price": "1,00€"
@@ -8,10 +8,12 @@
             {
                 "name": "Acqua Gassata 50cl",
                 "price": "1,00€"
-            },
+            }
+        ],
+        "bibite": [
             {
                 "name": "Red Bull 33cl",
-                "price": "3,00€"
+                "price": "2,50€"
             },
             {
                 "name": "Coca Cola 33cl",
@@ -30,13 +32,25 @@
                 "price": "2,50€"
             },
             {
-                "name": "Powerade 50cl",
+                "name": "Powerade Blue 50cl",
+                "price": "3,00€"
+            },
+            {
+                "name": "Powerade Red 50cl",
+                "price": "3,00€"
+            },
+            {
+                "name": "Powerade Orange 50cl",
                 "price": "3,00€"
             }
         ],
-        "alcoholic": [
+        "alcolici": [
             {
                 "name": "Birra",
+                "price": "5,00€"
+            },
+            {
+                "name": "Spritz",
                 "price": "5,00€"
             },
             {
@@ -62,6 +76,16 @@
             {
                 "name": "London Mule",
                 "price": "7,00€"
+            }
+        ],
+        "amari": [
+            {
+                "name": "Montenegro",
+                "price": "3,00€"
+            },
+            {
+                "name": "Amaro del capo",
+                "price": "3,00€"
             }
         ]
         
