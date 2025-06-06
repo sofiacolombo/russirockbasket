@@ -3,31 +3,31 @@
         "pinsa": [
             {
                 "name": "Pinsa Bianca",
-                "description": "Pinsa con olio Evo e sale grosso",
+                "description": "Pinsa con Olio Evo e Sale Grosso",
                 "restaurant": "Bella lì",
                 "price": "5,00€" 
             },
             {
                 "name": "Pinsa Bianca + Affettati",
-                "description": "Pinsa con olio Evo, sale grosso e prosciutto crudo o prosciutto cotto o salame o mortadella a vs scelta",
+                "description": "Pinsa con Olio Evo, Sale Grosso e Prosciutto Crudo o Prosciutto Cotto o Salame o Mortadella a Vs Scelta",
                 "restaurant": "Bella lì",
                 "price": "6,00€" 
             },
             {
                 "name": "Pinsa Margherita",
-                "description": "Pinsa fior di latte e pomodoro",
+                "description": "Pinsa Fior di Latte e Pomodoro",
                 "restaurant": "Bella lì",
                 "price": "6,00€" 
             },
             {
                 "name": "Pinsa Porcella",
-                "description": "Pinsa fior di latte, pomodoro e salciccia cotta al forno",
+                "description": "Pinsa, Fior di Latte, Pomodoro e Salciccia Cotta al Forno",
                 "restaurant": "Bella lì",
                 "price": "7,00€" 
             },
             {
                 "name": "Pinsa Trivigiana",
-                "description": "Pinsa, fior di latte, pomodoro, radicchio rosso e pancetta",
+                "description": "Pinsa, Fior di latte, Pomodoro, Radicchio Rosso e Pancetta",
                 "restaurant": "Bella lì",
                 "price": "8,00€" 
             },
