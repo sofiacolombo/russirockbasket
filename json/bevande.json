@@ -12,11 +12,11 @@
         ],
         "bibite": [
             {
-                "name": "Red Bull 33cl",
+                "name": "Coca Cola 33cl",
                 "price": "2,50€"
             },
             {
-                "name": "Coca Cola 33cl",
+                "name": "Coca Cola Zero 33cl",
                 "price": "2,50€"
             },
             {
@@ -32,6 +32,10 @@
                 "price": "2,50€"
             },
             {
+                "name": "Red Bull 33cl",
+                "price": "3,00€"
+            },
+            {
                 "name": "Powerade Blue 50cl",
                 "price": "3,00€"
             },
@@ -42,6 +46,10 @@
             {
                 "name": "Powerade Orange 50cl",
                 "price": "3,00€"
+            },
+            {
+                "name": "Caffè",
+                "price": "1,00€"
             }
         ],
         "alcolici": [
