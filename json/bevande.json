@@ -46,10 +46,6 @@
             {
                 "name": "Powerade Orange 50cl",
                 "price": "3,00€"
-            },
-            {
-                "name": "Caffè",
-                "price": "1,00€"
             }
         ],
         "alcolici": [
@@ -86,7 +82,11 @@
                 "price": "7,00€"
             }
         ],
-        "amari": [
+        "amari e Caffè": [
+            {
+                "name": "Caffè",
+                "price": "1,00€"
+            },
             {
                 "name": "Montenegro",
                 "price": "3,00€"
