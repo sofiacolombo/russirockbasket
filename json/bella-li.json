@@ -80,7 +80,7 @@
                 "price": "7,00€" 
             }
         ],
-        "tib": [
+        "T.I.B": [
             {
                 "name": "T.I.B Con Affettati",
                 "description": "Panino con Prosciutto Crudo o Prosciutto Cotto o Salame o Mortadella a Vs scelta",
@@ -124,6 +124,6 @@
                 "price": "7,00€" 
             }
         ],
-        "other": "Peso Pinsa: 230gr. \nPeso T.I.B: 130gr.\nAllergeni: Cereali contenenti Glutine (Pane), Latte (Formaggio), Soia e Uova(Salse)"
+        "other": "Peso Pinsa: 230gr. \nPeso T.I.B: 130gr.\nAllergeni: Cereali contenenti Glutine (Pane), Latte (Formaggio), Soia e Uova (Salse)"
     }
 ]

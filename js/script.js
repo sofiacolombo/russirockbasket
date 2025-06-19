@@ -53,21 +53,21 @@ function fillMenu(btnId, data) {
     logo.id = "image-logo";
 
     // gestione logo
-    if (btnId !== "bevande") {
-        let img = document.createElement('img');
-        img.src = `./img/ristoranti/logo_${btnId}.png`;
-        img.className = 'ristorante';
-        logo.appendChild(img);
-        container.appendChild(logo);
-    }
+    let img = document.createElement('img');
+    img.src = `./img/ristoranti/logo_${btnId}.png`;
+    img.className = 'ristorante';
+    logo.appendChild(img);
+    container.appendChild(logo);
 
     const titoletti = Object.keys(data[0]);
     titoletti.forEach((title) => {
-        let h3 = document.createElement("h3");
-        h3.className = "title"
-        h3.textContent = String(title) === "other" ? '' : String(title).charAt(0).toUpperCase() + title.slice(1);
+        if (String(title) !== "other") {
+            let h3 = document.createElement("h3");
+            h3.className = "title"
+            h3.textContent = String(title).charAt(0).toUpperCase() + title.slice(1);
 
-        menu.appendChild(h3);
+            menu.appendChild(h3);
+        }
         const items = data[0][title];
         if (Array.isArray(items)) {
             items.forEach((plate) => {
@@ -86,7 +86,7 @@ function fillMenu(btnId, data) {
             });
         } else if (typeof items === "string") {
             let div = document.createElement("div");
-            div.className = "col-12";
+            div.className = "other col-12";
             let p = document.createElement("p"); 
             p.textContent = items;
             div.appendChild(p);

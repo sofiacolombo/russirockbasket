@@ -34,7 +34,7 @@ body {
 .title {
     font-weight: bold;
     text-align: center;
-    margin: 15px 0 15px 0;
+    margin: 25px 0 25px 0;
 }
 
 .scelta { 
@@ -92,7 +92,7 @@ body {
 }
 
 .image-logo {
-    margin:15px 0 15px 0;
+    margin:60px 0 15px 0;
 }
 
 .ristorante {
@@ -117,6 +117,10 @@ small {
     margin-right: 10px;
 }
 
+.other {
+    margin: 10px 0 0 0;
+}
+
 #footer {
     background-color: var(--main-text-color);
     color:var(--other-text-color);
@@ -126,4 +130,4 @@ small {
     height: 20px;
     text-align: center;
     line-height: 60px;
-  }
+}
