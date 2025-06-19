@@ -1,6 +1,8 @@
-# RussiRockBasket
-Sito web menù per evento RussiRockBasket (2023).  
-QRCode allegato.
-In aggiornamento per anno 2024
+# 🏀 RussiRockBasket
+Sito web menù RussiRockBasket.  
 
-Online [qui](https://russirockbasket.github.io/).
+RussiRockBasket è un torneo 3vs3 di pallacanestro che si svolge annualmente, nell'arco di 3 giorni, dal 2023.
+Questo è il codice relativo al sito contenente il menù che gli spettatori possono ordinare nelle serate dell'evento.
+
+Online [qui](https://russirockbasket.github.io/).  
+Consigliata visione mobile-first.
