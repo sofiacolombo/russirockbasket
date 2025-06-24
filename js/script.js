@@ -61,7 +61,7 @@ function fillMenu(btnId, data) {
     container.appendChild(logo);
     if (btnId !== "bevande" && btnId !== "gelato") {
         let text = document.createElement('span');
-        text.textContent = "Gli ordini si fanno alla cassa.";
+        text.textContent = "Gli ordini si fanno al tendone giallo.";
         text.className = "avviso";
         logo.appendChild(text);
     }
