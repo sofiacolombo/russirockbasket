@@ -1,5 +1,49 @@
 [ 
     {
-        "gelato": "È possibile comprare e ritirare gelato dal banco vicino al bar."
+        "info": "È possibile comprare e ritirare gelato dal banco vicino al bar.",
+        "costi": [
+            {
+                "name": "Piccolo",
+                "price": "3,50€"
+            },
+            {
+                "name": "Medio",
+                "price": "4,50€"
+            },
+            {
+                "name": "Grande",
+                "price": "5,50€"
+            }, 
+            {
+                "name": "Briosche siciliana con gelato",
+                "price": "6,00€"
+            }
+        ],
+        "gusti": [
+            {
+                "name": "Squacquerone, Fichi Caramellati e Piadina"
+            },
+            {
+                "name": "Dolce Salato"
+            },
+            {
+                "name": "Albicocca"
+            },
+            {
+                "name": "Ginger Beer"
+            },
+            {
+                "name": "Pistacchio"
+            },
+            {
+                "name": "Bacio"
+            },
+            {
+                "name": "Crema"
+            },
+            {
+                "name": "Vaniglia"
+            }
+        ]
     }
 ]
