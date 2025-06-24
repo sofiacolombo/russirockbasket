@@ -59,6 +59,12 @@ function fillMenu(btnId, data) {
     img.className = 'ristorante';
     logo.appendChild(img);
     container.appendChild(logo);
+    if (btnId !== "bevande" && btnId !== "gelato") {
+        let text = document.createElement('span');
+        text.textContent = "Gli ordini si fanno alla cassa.";
+        text.className = "avviso";
+        logo.appendChild(text);
+    }
 
     const titoletti = Object.keys(data[0]);
     titoletti.forEach((title) => {
