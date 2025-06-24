@@ -73,17 +73,19 @@ function fillMenu(btnId, data) {
         if (Array.isArray(items)) {
             items.forEach((plate) => {
                 let col8 = document.createElement("div"); 
-                col8.className = "col-8";
+                plate.price ? col8.className = "col-8" : col8.className = "col-12";
                 col8.innerHTML = 
                 `
                     <p class="name">${plate.name}</p>
                     <small>${plate?.description || ''}</small>
                 `
                 let col4 = document.createElement("div"); 
-                col4.className = "col-4";
-                col4.innerHTML = `<p class="price">${plate.price}</p>`
+                if (plate.price) {
+                    col4.className = "col-4";
+                    col4.innerHTML = `<p class="price">${plate.price}</p>`
+                }
                 menu.appendChild(col8);
-                menu.appendChild(col4);
+                if (plate.price) menu.appendChild(col4);
             });
         } else if (typeof items === "string") {
             let div = document.createElement("div");
