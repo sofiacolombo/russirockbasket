@@ -2,7 +2,8 @@ const jsonFiles = [
     './json/furzena.json',
     './json/blue.json',
     './json/bella-li.json',
-    './json/bevande.json'
+    './json/bevande.json',
+    './json/gelato.json'
 ];
 
 var dataCache = jsonFiles.map(file =>
