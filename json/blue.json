@@ -2,25 +2,25 @@
     {
         "secondi": [
             {
-                "name": "Cheesebacon Burger",
+                "name": "Cheesebacon Burger*",
                 "description": "Scottona 200g, bacon, cheddar, pomodoro, lattuga, cipolla stufata, maionese, ketchup",
                 "restaurant": "Blue'n Green Pub",
                 "price": "13,00€" 
             },
             {
-                "name": "FitBurger",
+                "name": "FitBurger*",
                 "description": "Scottona 200g, pomodoro, lattuga, cipolla stufata",
                 "restaurant": "Blue'n Green Pub",
                 "price": "10,00€" 
             },
             {
-                "name": "Veg Burger",
+                "name": "Veg Burger*",
                 "description": "Svizzera d'avena e broccoli, maionese veg al pomodoro secco, melanzane grigliate, cavolo cappuccio marinato all'aceto di mele",
                 "restaurant": "Blue'n Green Pub",
                 "price": "10,00€" 
             },
             {
-                "name": "Hotdog",
+                "name": "Hotdog*",
                 "description": "Wurstel, ketchup, maionese, cipolla stufata",
                 "restaurant": "Blue'n Green Pub",
                 "price": "8,00€" 
@@ -44,6 +44,6 @@
                 "price": "4,00€" 
             }
         ],
-        "info": "I panini sono serviti con patatine fritte. \nUniche variazione ammesse: NO CIPOLLA e/o NO SALSE"
+        "info": "I panini sono serviti con patatine fritte. \nUniche variazione ammesse: NO CIPOLLA e/o NO SALSE. *È possibile chiedere pane senza glutine."
     }
 ]
